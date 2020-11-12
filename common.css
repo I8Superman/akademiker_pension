@@ -1,0 +1,27 @@
+:root {
+    /* --- Primary colors --- */
+    --orange: #f2efea;
+    --navyblue: #386082;
+    --black: #000000;
+    --grey: #BEBCB6;
+    --white: #FFFFFF;
+    /* --- Seciondary colors --- */
+    --blue: #40407F;
+    --olive: #7F7F40;
+    --terracotta: #7F4040;
+    --purple: #7F407F;
+    --green: #407F6A;
+    /* --- Light colors --- */
+    --light-blue: #ADD2F1;
+    --light-skin: #F2D7D4;
+    --light-red: #F09080;
+    --light-green: #72BA83;
+    --light-yellow: #FCEDA2;
+
+    /* --- Background broken white --- */
+    --background-white: #ECEFF2;
+}
+
+* {
+    box-sizing: border-box;
+}
