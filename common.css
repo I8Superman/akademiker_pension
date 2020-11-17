@@ -19,9 +19,24 @@
     --light-yellow: #FCEDA2;
 
     /* --- Background broken white --- */
-    --background-white: #ECEFF2;
+    --back-white: #ECEFF2;
 }
 
 * {
     box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-color: var(--back-white);
+    display: grid;
+    grid-template-columns: 2% 10% 38% 48% 2%;
+    grid-template-areas:
+        ". hd hd na ."
+        ". as ma ma ."
+        ". ft ft sa .";
+}
+
+header {
+    height
 }
