@@ -73,6 +73,9 @@ p {
     font-family: 'Open sans', sans-serif;
 }
 
+a {
+    cursor: pointer;
+}
 
 body {
     margin: 0;
@@ -92,7 +95,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: %;
 }
 
 .logo {
@@ -217,6 +219,7 @@ main {
 }
 
 .sub_category h3 {
+    font-size: 1.3rem;
     color: var(--white);
     font-weight: 400;
     margin: 0;
@@ -224,47 +227,49 @@ main {
 }
 
 /* --- Article and situations --- */
-/*
-#article {
-    margin: 3% 5% 0% 5%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-    grid-gap: 2vw;
-}
-*/
 
 .situation_container {
+    width: 60%;
     margin: 3% 5% 0% 5%;
-    background-color: var(--navyblue);
 }
 
 
-/*
-.situation {
-    width: %;
-    background-color: var(--navyblue);
-    color: var(--white);
+.has_image {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 2vw;
+}
+
+.situation_container img {
+    width: 60%;
     border-radius: 20px 8px 20px 0;
+    box-shadow: 8px -6px 8px -2px rgba(0, 0, 0, 0.22);
+}
+
+.situation {
+    background-color: var(--navyblue);
+    border-radius: 20px 8px 20px 0;
+    color: var(--white);
     padding: 0rem 2.5rem 2rem 2.5rem;
     box-shadow: 8px -6px 8px -2px rgba(0, 0, 0, 0.22);
 }
 
-.situation_container {
-
-    margin: 3% 5% 0% 5%;
+.button {
+    background-color: var(--orange);
+    width: 60%;
+    border-radius: 20px 0px 20px 20px;
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
-.with_image {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-gap: 2vw;
-}
-
-
-
-.situation_container img {
-    border-radius: 20px 8px 20px 0;
-    box-shadow: 8px -6px 8px -2px rgba(0, 0, 0, 0.22);
+.button a {
+    text-decoration: none;
+    font-family: 'Open sans', sans-serif;
+    color: var(--white);
+    font-weight: 700;
 }
 
 .situation h2 {
@@ -281,4 +286,8 @@ main {
     background-color: var(--white);
     color: var(--black);
 }
-*/
+
+footer img {
+    margin-top: 10%;
+    width: 100%;
+}
