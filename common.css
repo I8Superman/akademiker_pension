@@ -52,7 +52,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2vw;
+    font-size: 1.5rem;
     line-height: 100%;
 }
 
@@ -124,7 +124,6 @@ header {
     width: 100%;
     padding-top: 130%;
     border-radius: 6% 2% 6% 0%;
-    background-color: orangered;
     overflow: hidden;
 }
 
@@ -163,24 +162,12 @@ header {
     color: var(--white);
 }
 
-.main_category p {
+/* --- Sub categories --- */
 
-}
-
-/* body {
-    margin: 0px;
-    background-color: var(--back-white);
+#sub_categories {
+    margin: 2% 5% 0% 5%;
     display: grid;
-    grid-template-columns: 2% 10% 38% 48% 2%;
-    grid-template-areas:
-        ". hd hd na ."
-        ". as ma ma ."
-        ". ft ft sa .";
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    grid-gap: 2vw;
 }
 
-main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 4.5vw;
-}
-*/
