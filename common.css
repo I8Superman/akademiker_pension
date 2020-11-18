@@ -1,3 +1,4 @@
+/* --- colors --- */
 :root {
     /* --- Primary colors --- */
     --orange: #f2efea;
@@ -22,11 +23,151 @@
     --back-white: #ECEFF2;
 }
 
+/* --- fonts --- */
+
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:wght@300;400;600;700&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Aleo', sans-serif;
+}
+
+h1 {
+    font-size: 4vw;
+    line-height: 100%;
+}
+
+h2 {
+    font-size: 3vw;
+    line-height: 100%;
+}
+
+h3 {
+    font-size: 2vw;
+    line-height: 100%;
+}
+
+h4 {
+    font-size: 1.2vw;
+    line-height: 100%;
+}
+
+p {
+    font-family: 'Open sans', sans-serif;
+}
+
+
 body {
+    margin: 0;
+    background-color: var(--back-white);
+}
+
+header {
+    background-color: var(--white);
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+#header_content {
+    height: 5vw;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: %;
+}
+
+.logo {
+    width: 20%;
+}
+
+.header_nav ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    width: 45vw;
+    justify-content: space-between;
+}
+
+#icons {
+    width: 15vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#icons img {
+    width: 2.5vw;
+}
+
+/* --- MAin categories --- */
+
+#main_categories {
+    margin: 2% 5% 0% 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    grid-gap: 2vw;
+}
+
+.main_category_container {
+    position: relative;
+    /*overflow: hidden;*/
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 6% 2% 6% 0%;
+    background-color: orangered;
+    overflow: hidden;
+}
+
+.main_category_container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.color_filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.color_filter:hover {
+    opacity: 1;
+}
+
+.main_category {
+    top: 0;
+    left: 0;
+    padding-top: 25%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    pointer-events: none;
+    color: var(--white);
+}
+
+.main_category p {
+
+}
+
+/* body {
     margin: 0px;
     background-color: var(--back-white);
     display: grid;
@@ -37,6 +178,9 @@ body {
         ". ft ft sa .";
 }
 
-header {
-    height
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 4.5vw;
 }
+*/
