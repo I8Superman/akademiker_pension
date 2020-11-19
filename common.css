@@ -209,9 +209,13 @@ main {
     grid-gap: 2vw;
 }
 
+.sublink {
+    text-decoration: none;
+
+}
+
 .sub_category {
     width: 100%;
-    background-color: #407F6A;
     border-radius: 20px 8px 20px 0;
     display: flex;
     justify-content: center;

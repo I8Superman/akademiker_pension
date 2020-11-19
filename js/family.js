@@ -27,13 +27,19 @@ function createSubbuttons(oneCat) {
     // Clone the template
     const subCopy = template.cloneNode(true);
     // Fill out the template
-    const a = subCopy.querySelector
     subCopy.querySelector(".sub_category h3").textContent = oneCat.name;
     // Give the boxes the right color
     subCopy.querySelector(".sub_category").setAttribute("style", "background-color: #407F6A;")
+    // Set the goddamn link
+    const a = subCopy.querySelector("a");
+    if (a) {
+    a.href += oneCat.id;
+    }
     // Append the template
     const parentElement = document.querySelector("#sub_categories");
     parentElement.appendChild(subCopy);
+
+
 }
 
 /*
