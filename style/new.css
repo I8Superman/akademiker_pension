@@ -1,0 +1,15 @@
+#new {
+    opacity: 1;
+}
+
+.color_bar {
+    background-color: var(--orange);
+}
+.situation_container:nth-child(even) .situation {
+    background-color: var(--orange);
+}
+
+.button {
+    background-color: var(--white);
+    color: var(--black);
+}

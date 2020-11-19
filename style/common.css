@@ -228,7 +228,7 @@ main {
     color: var(--white);
     font-weight: 400;
     margin: 0;
-    padding: 6% 10% 6% 10%;
+    padding: 1rem;
 }
 
 /* --- Article and situations --- */
