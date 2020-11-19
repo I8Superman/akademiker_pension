@@ -1,0 +1,11 @@
+
+#health {
+    opacity: 1;
+}
+
+.color_bar {
+    background-color: var(--olive);
+}
+.situation_container:nth-child(even) .situation {
+    background-color: var(--olive);
+}

@@ -1,0 +1,11 @@
+
+#old {
+    opacity: 1;
+}
+
+.color_bar {
+    background-color: var(--terracotta);
+}
+.situation_container:nth-child(even) .situation {
+    background-color: var(--terracotta);
+}

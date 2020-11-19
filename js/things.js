@@ -1,4 +1,4 @@
-// WORK page js
+// THINGS page js
 
 getData();
 
@@ -17,7 +17,7 @@ function getData() {
             .then(gotemByid);
     }
 
-    fetch("http://ssays.dk/kea/houses/wp-json/wp/v2/categories?parent=3")
+    fetch("http://ssays.dk/kea/houses/wp-json/wp/v2/categories?parent=4")
         .then(response => response.json())
         .then(function (data) {
             dataReceived(data)
@@ -107,7 +107,7 @@ function createSubbuttons(oneCat) {
     // Fill out the template
     subCopy.querySelector(".sub_category h3").textContent = oneCat.name;
     // Give the boxes the right color
-    subCopy.querySelector(".sub_category").setAttribute("style", "background-color: #7F407F;")
+    subCopy.querySelector(".sub_category").setAttribute("style", "background-color: #386082;")
     // Set the goddamn link
     const a = subCopy.querySelector("a");
     if (a) {

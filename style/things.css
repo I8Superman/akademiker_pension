@@ -1,0 +1,11 @@
+
+#things {
+    opacity: 1;
+}
+
+.color_bar {
+    background-color: var(--navyblue);
+}
+.situation_container:nth-child(even) .situation {
+    background-color: var(--navyblue);
+}

@@ -1,4 +1,4 @@
-// FAMILY page js
+// HEALTH page js
 
 getData();
 
@@ -17,7 +17,7 @@ function getData() {
             .then(gotemByid);
     }
 
-    fetch("http://ssays.dk/kea/houses/wp-json/wp/v2/categories?parent=2")
+    fetch("http://ssays.dk/kea/houses/wp-json/wp/v2/categories?parent=19")
         .then(response => response.json())
         .then(function (data) {
             dataReceived(data)
@@ -94,7 +94,7 @@ function showArticle(oneSit) {
 }
 
 function dataReceived(cats) {
-    //console.log(cats);
+    console.log(cats);
     cats.forEach(createSubbuttons);
 }
 
@@ -111,10 +111,10 @@ function createSubbuttons(oneCat) {
     // Set the goddamn link
     const a = subCopy.querySelector("a");
     if (a) {
-        a.href += oneCat.id;
+        a.href += oneCat.id + "#scroll_subs";
     }
     // Append the template
-    const parentElement = document.querySelector("#sub_categories");
+    const parentElement = document.querySelector(".sub_categories");
     parentElement.appendChild(subCopy);
 }
 

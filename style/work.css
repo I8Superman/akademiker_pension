@@ -1,0 +1,11 @@
+
+#work {
+    opacity: 1;
+}
+
+.color_bar {
+    background-color: var(--purple);
+}
+.situation_container:nth-child(even) .situation {
+    background-color: var(--purple);
+}

@@ -133,7 +133,7 @@ main {
     height: 50vh;
     width: 100%;
     background-color: var(--orange);
-    opacity: 0.7;
+    opacity: 1;
 }
 
 .whats_new {
