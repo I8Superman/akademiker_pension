@@ -107,7 +107,7 @@ function createSubbuttons(oneCat) {
     // Fill out the template
     subCopy.querySelector(".sub_category h3").textContent = oneCat.name;
     // Give the boxes the right color
-    subCopy.querySelector(".sub_category").setAttribute("style", "background-color: #407F6A;")
+    subCopy.querySelector(".sub_category").setAttribute("style", "background-color: #7F7F40;")
     // Set the goddamn link
     const a = subCopy.querySelector("a");
     if (a) {

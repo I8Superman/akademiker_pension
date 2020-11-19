@@ -80,6 +80,7 @@ a {
 body {
     margin: 0;
     background-color: var(--back-white);
+    overflow-x: hidden;
 }
 
 header {
@@ -246,17 +247,25 @@ main {
 }
 
 .situation_container img {
-    width: 60%;
+    height: 100%;
     border-radius: 20px 8px 20px 0;
     box-shadow: 8px -6px 8px -2px rgba(0, 0, 0, 0.22);
 }
 
 .situation {
-    background-color: var(--navyblue);
     border-radius: 20px 8px 20px 0;
     color: var(--white);
     padding: 0rem 2.5rem 2rem 2.5rem;
     box-shadow: 8px -6px 8px -2px rgba(0, 0, 0, 0.22);
+}
+
+.situation_container:nth-child(even) .situation {
+    background-color: var(--navyblue);
+}
+
+.situation_container:nth-child(odd) .situation {
+    background-color: var(--white);
+    color: var(--black);
 }
 
 .button {
@@ -271,6 +280,7 @@ main {
     font-family: 'Open sans', sans-serif;
     color: var(--white);
     font-weight: 700;
+    box-shadow: 5px -2px 8px -2px rgba(0, 0, 0, 0.22);
 }
 
 .button a {
@@ -287,6 +297,7 @@ main {
 
 .not_first_header {
     font-family: 'Open sans', sans-serif;
+    font-size: 2vw;
 }
 
 .situation h5 {
@@ -300,6 +311,6 @@ main {
 }
 
 footer img {
-    margin-top: 10%;
+    margin-top: 15%;
     width: 100%;
 }

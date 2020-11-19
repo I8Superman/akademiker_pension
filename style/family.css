@@ -1,0 +1,7 @@
+.color_filter > .family {
+    opacity: 1;
+}
+
+.situation_container:nth-child(even) .situation {
+    background-color: var(--green);
+}
