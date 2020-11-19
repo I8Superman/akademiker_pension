@@ -111,10 +111,10 @@ function createSubbuttons(oneCat) {
     // Set the goddamn link
     const a = subCopy.querySelector("a");
     if (a) {
-        a.href += oneCat.id;
+        a.href += oneCat.id + "#scroll_subs";
     }
     // Append the template
-    const parentElement = document.querySelector("#sub_categories");
+    const parentElement = document.querySelector(".sub_categories");
     parentElement.appendChild(subCopy);
 }
 
